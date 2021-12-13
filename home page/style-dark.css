@@ -1,0 +1,23 @@
+body{
+    background-color:#2E4C6D ;
+}
+h2{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F4F6FC;
+}
+#customBtn {
+    /* display: inline-block; */
+    background:#F4F6FC;
+    color: #2E4C6D;
+    width: 280px;
+
+}
+#theme-toggler{
+    float:right;
+    margin-right: 5%;
+    margin-top: 5%;
+    color: #F4F6FC;
+    font-weight: 600;
+    font-size: 20px;
+  }
