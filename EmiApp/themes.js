@@ -1,3 +1,41 @@
+//Google sign out and sign in
+var googleUser = {};
+  var startApp = function() {
+    gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+      auth2 = gapi.auth2.init({
+        client_id: '365228941923-05l387aevb2cch3ffvf4f0irqskbshf9.apps.googleusercontent.com',
+        cookiepolicy: 'single_host_origin',
+        // redirect_uri:'http://localhost:5501/emiapp.html'
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+      attachSignin(document.getElementById('customBtn'));
+    });
+  };
+
+  function attachSignin(element) {
+    console.log(element.id);
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+          location.href = 'http://localhost:5500/index.html'
+          document.getElementById('name').innerText = "Signed in: " +
+              googleUser.getBasicProfile().getName();
+        }, function(error) {
+          alert(JSON.stringify(error, undefined, 2));
+
+   
+          // window.location.href = 'http://localhost:5501/emiapp.html'
+        });
+  }
+// Function for sign out
+  function signOut(){
+    var auth2=gapi.auth2.getAuthIntance();
+    auth2.signOut().then(function(){
+      console.log('User signed out');
+    });
+  }
+
 // you can use app's unique identifier here
 const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
 const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
