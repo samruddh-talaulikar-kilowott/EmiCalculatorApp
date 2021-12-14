@@ -4,7 +4,7 @@ var googleUser = {};
     gapi.load('auth2', function(){
       // Retrieve the singleton for the GoogleAuth library and set up the client.
       auth2 = gapi.auth2.init({
-        client_id: '365228941923-05l387aevb2cch3ffvf4f0irqskbshf9.apps.googleusercontent.com',
+        client_id: '1022490176411-mqbrkdgndir9tufq27bag0mpkeqmnnio.apps.googleusercontent.com',
         cookiepolicy: 'single_host_origin',
         // redirect_uri:'http://localhost:5501/emiapp.html'
         // Request scopes in addition to 'profile' and 'email'
@@ -18,7 +18,7 @@ var googleUser = {};
     console.log(element.id);
     auth2.attachClickHandler(element, {},
         function(googleUser) {
-          location.href = 'http://localhost:5500/index.html'
+          location.href = 'https://stoic-leakey-7fc79c.netlify.app/homepage.html'
           document.getElementById('name').innerText = "Signed in: " +
               googleUser.getBasicProfile().getName();
         }, function(error) {
