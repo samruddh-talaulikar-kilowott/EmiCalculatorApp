@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://apis.google.com/js/api:client.js"></script>
+
+    <!-- external css -->
+    <link rel="stylesheet" type="text/css" href="styles.css">  
+    <link id="dark-theme-style" rel="stylesheet">
+
+    <!-- external js -->
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+
+    <meta name="google-signin-client_id" content="1031743535576-kv29n474opr2a22jc1v0493bc217cprb.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+ 
+</head>
+<body>
+    <button class="btn btn-outline-secondary mr-5 theme-btn" id="theme-toggler" onclick="toggleTheme()">Switch Theme</button>
+  <div class="container">
+        
+        <div class="row">
+          <div class="col-6 col-lg-5">
+           
+              <h2>Calculate EMI for your loan with Flexible EMI Calculator.</h2>
+              <h2> All in one platform.</h2>
+              <br><br>
+              <div id="gSignInWrapper">
+            
+                <div id="customBtn" class="customGPlusSignIn">
+                  <span class="icon">
+                    <img src="images/image5.png" width="25px" height="25px">
+                  </span>
+                  <span class="buttonText">Log in with Google</span>
+                </div>
+              </div>
+              <div id="name"></div>
+              <script>startApp();</script>
+            </div>
+        <div class="col-6 col-lg-7 rotate-image1" id="images">
+          
+               <img src="images/image3.png" id="image3" width="250px" height="450px">
+                <img src="images/image4.png" id="image4" width="140px" height="140px">
+              <img src="images/image2.PNG" width="220px" id="image2">
+          </div>
+  <a href="index.html"> Calculator</a>
+   
+</div>
+</div>
+<script type="text/javascript" src="themes.js"></script>
+</body>
+</html>
