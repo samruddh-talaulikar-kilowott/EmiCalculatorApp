@@ -41,6 +41,9 @@ const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
 const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
 // you can change this url as needed
 const DARK_THEME_PATH = "styles-dark.css";
+const Dark_Theme_Image="images/image2.png";
+
+const Light_Theme_Image="images/image1.png";
 
 const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
 const THEME_TOGGLER = document.getElementById("theme-toggler");
@@ -48,10 +51,12 @@ let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
 const enableDarkTheme = () => {
     DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
     document.getElementById("theme-toggler").innerHTML = "🌞 Light";
+  document.getElementById("image2").setAttribute("src",Light_Theme_Image);
 }
 const disableDarkTheme = () => {
     DARK_STYLE_LINK.setAttribute("href", "");
     document.getElementById("theme-toggler").innerHTML = "🌙 Dark";
+    document.getElementById("image2").setAttribute("src",Dark_Theme_Image);
 }
 // check if user has already selected dark theme earlier
 if (isDark) {
