@@ -76,3 +76,11 @@ body {
   margin-top: 2.5%;
   margin-bottom: 3%;
 }
+
+#theme-toggler{
+  color: #F4F6FC;
+  font-weight: 500;
+  font-size: 15px;
+  background-color:#2E4C6D ;
+  font-family: 'PT Serif', serif;
+}
