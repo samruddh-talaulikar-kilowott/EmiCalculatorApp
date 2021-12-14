@@ -3,8 +3,7 @@ const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
 const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
 // you can change this url as needed
 const DARK_THEME_PATH = "styles-dark.css";
-const DARK_IMAGE = "./images/image1.png";
-const LIGHT_IMAGE = "./images/image2.png";
+
 const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
 const THEME_TOGGLER = document.getElementById("theme-toggler");
 let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
