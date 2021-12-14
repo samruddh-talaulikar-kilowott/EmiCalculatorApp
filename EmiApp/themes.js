@@ -18,7 +18,7 @@ var googleUser = {};
     console.log(element.id);
     auth2.attachClickHandler(element, {},
         function(googleUser) {
-          location.href = 'https://stoic-leakey-7fc79c.netlify.app/homepage.html'
+          location.href = 'https://vibrant-poitras-2fdb4d.netlify.app/homepage.html'
           document.getElementById('name').innerText = "Signed in: " +
               googleUser.getBasicProfile().getName();
         }, function(error) {

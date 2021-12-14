@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="1022490176411-mqbrkdgndir9tufq27bag0mpkeqmnnio.apps.googleusercontent.com">
     <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   
@@ -15,14 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=PT+Serif&display=swap" rel="stylesheet">
   
-
-    <!-- external js -->
-   
-    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://apis.google.com/js/api:client.js"></script>
-    <meta name="google-signin-client_id" content="1022490176411-mqbrkdgndir9tufq27bag0mpkeqmnnio.apps.googleusercontent.com">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    
+    
     
  
 </head>
@@ -42,12 +41,14 @@
                 <div id="customBtn" class="customGPlusSignIn">
                   <span class="icon">
                     <img src="images/image5.png" width="25px" height="25px">
+                  <!-- Changed this login startApp -->
                   </span>
-                  <button class="op" onClick();>Log in with Google</button>
+
+                  <button class="op" onclick="startApp();">Log in with Google</button>
                 </div>
               </div>
-              <div id="name"></div>
-              <script>startApp();</script>
+              
+            
             </div>
         <div class="col-6 col-lg-7 rotate-image1" id="images">
           
@@ -59,6 +60,9 @@
    
 </div>
 </div>
+<!-- external js -->
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
 <script  src="themes.js"></script>
 
 
