@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://apis.google.com/js/api:client.js"></script>
+
 
 <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
@@ -37,7 +39,8 @@
 
     </div>
     <span class="user-themes">
-      <button class="btn btn-primary logout-btn">Logout</button>
+      <!-- //Routing back after clicking on signout -->
+      <a href="http://localhost:5500/login.html"  onClick="GoogleAuth.signOut();"><button class="btn btn-primary" >Signout</button> </a>
   </span>
   </div>
   
@@ -97,3 +100,4 @@
  <script src="themes.js"></script>
 </body>
 </html>
+
