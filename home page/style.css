@@ -1,5 +1,6 @@
 body{
     background-color:#F4F6FC;
+    font-family: 'PT Serif', serif;
 }
 
 .container .row .col-6{
@@ -14,9 +15,6 @@ body{
   
 }
 
-   
-  
-
 #image3{
   opacity: 0.5;
   z-index: -1;
@@ -26,7 +24,7 @@ body{
 #image4{
     margin-top: 20%;
    left: 20%;
-   /* opacity: 0.5; */
+    opacity: 0.5; 
    margin-left: 20%;
    margin-bottom: 8%;
 }
@@ -80,11 +78,8 @@ h2{
   }
   #theme-toggler{
     float:right;
-    margin-right: 5%;
-    margin-top: 5%;
+    margin: 3% 5% 0 0;
     color: #F4F6FC;
-    font-weight: 700;
-    font-size: 20px;
     background-color:#2E4C6D ;
-    font-family: 'PT Serif', serif;
+    
   }

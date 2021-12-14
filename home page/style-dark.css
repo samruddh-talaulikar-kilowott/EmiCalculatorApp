@@ -1,5 +1,6 @@
 body{
     background-color:#2E4C6D ;
+    font-family:'PT Serif', serif;
 }
 h2{
     font-size: 50px;
@@ -16,11 +17,8 @@ h2{
 }
 #theme-toggler{
     float:right;
-    margin-right: 5%;
-    margin-top: 5%;
-    color:  #2E4C6D;
-    font-weight: 700;
-    font-size: 20px;
-    background-color: #F4F6FC;
-    font-family:'PT Serif', serif;;
+    margin:3% 5% 0 0;
+   color:  #2E4C6D;
+   background-color: #F4F6FC;
+   
   }
