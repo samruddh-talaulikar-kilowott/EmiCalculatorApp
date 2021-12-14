@@ -18,14 +18,12 @@
   
   const enableDarkTheme = () => {
       DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
-      document.getElementById("theme-toggler").innerHTML = "🌙 Dark";
-      document.getElementById("image2").setAttribute("src", DARK_IMAGE);
+      document.getElementById("theme-toggler").innerHTML = "🌞 Light";
   }
     
   const disableDarkTheme = () => {
       DARK_STYLE_LINK.setAttribute("href", "");
-      document.getElementById("theme-toggler").innerHTML = "🌞 Light";
-      document.getElementById("image2").setAttribute("src", LIGHT_IMAGE);
+      document.getElementById("theme-toggler").innerHTML = "🌙 Dark";
   }
   
   
