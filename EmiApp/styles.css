@@ -178,3 +178,13 @@ span.buttonText {
  background-color:#2E4C6D ;
  
 }
+.op{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2%;
+ 
+  font-size: 24px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif;
+}
