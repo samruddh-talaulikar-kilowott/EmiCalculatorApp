@@ -5,9 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link id="dark-theme-style" rel="stylesheet" />
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
   <img src="images/kindpng_2137693.png" class="rupee" alt="rupee">
@@ -21,8 +24,10 @@
         
     </div>
     <div class="col-lg-4 user-themes">
-          <button class="btn btn-outline-secondary " id="theme-toggler" onclick="toggleTheme()">Switch Theme</button>
-      <img alt="avatar" src="images/avatar64.png" class="avatar mr-2">
+      <a class="btn btn-outline-secondary mr-5" id="theme-toggler" 
+      onclick="toggleTheme()">Switch Theme</a>
+
+            <img alt="avatar" src="images/avatar64.png" class="avatar mr-2">
       
     </div>
     <span class="user-themes">
@@ -34,11 +39,9 @@
     
     <form class="form-horizontal" action="">
       <img src="images/NicePng_inr-icon-png_3597751.png" alt="coin" class="coin">
-      <div class="clearfix">
-        <div class="form-group">
+      <div class="clearfix"><div class="form-group">
         <label class="control-label col-sm-2" for="principal">Principal Amount:</label>
         <div class="col-sm-4">
-          
           <input type="text" class="form-control" id="principal" name="principal">
         </div>
       </div>
@@ -57,7 +60,7 @@
     </div>
       
       
-      <div class="form-group spacing">
+      <div class="form-group ">
         <div class="row">
           <div class="col-sm-4">
             <button type="submit" class="btn btn-primary">Daily EMI</button>
@@ -79,11 +82,11 @@
           <input type="text" class="form-control" id="output" name="output">
         </div>
         <div class="col-sm-4">
-          <button type="submit" class="btn btn-default">Clear</button>
+          <button type="submit" class="btn btn-primary">Clear</button>
         </div>
     </div>
     </div>
  </div>
-
+ <script src="themes.js"></script>
 </body>
 </html>
