@@ -54,6 +54,7 @@ h2{
 
 .user-themes{
   padding: 2.5% 0 0 20%;
+  float: right;
 }
 
 .logout-btn{
