@@ -2,14 +2,16 @@ html,
 body {
   height: 100%;
   background-color: #F4F6FC;
+  font-family: 'DM Sans', sans-serif;
 }
 
-
+.title{
+  font-family: 'PT Serif', serif;
+}
 
 .form-section{
   margin-top: 5%;
-  margin-left: 15%;
-  
+  margin-left: 15%; 
 }
 
 .form-control{
@@ -22,7 +24,7 @@ body {
   color: #F4F6FC;
   background-color: #2E4C6D;
   border-color: #ccc;
-  
+  width:max-content;
 }
 
 .btn-primary:hover {
@@ -33,6 +35,16 @@ body {
 
 .user-themes{
   padding: 2.5% 0 0 20%;
+}
+
+.logout-btn{
+  margin: 1% 0 0 6%;
+  border-radius: 22px;
+}
+
+#theme-toggler{
+  background-color: #2E4C6D;
+  color:#F4F6FC;
 }
 
 .overlay {
@@ -57,30 +69,35 @@ body {
   left: 72%;
   top: 42%;
   z-index: 1;
- 
  }
-
-
 
 .avatar {
   vertical-align: left;
   width:40px;
   height: 40px;
-  margin-left:5%;
+  margin-left:10%;
   border-radius: 50%;
 }
-
-
 
 .spacing{
   margin-top: 2.5%;
   margin-bottom: 3%;
 }
 
-#theme-toggler{
-  color: #F4F6FC;
-  font-weight: 500;
-  font-size: 15px;
-  background-color:#2E4C6D ;
+.labels{
   font-family: 'PT Serif', serif;
+  text-align: right;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 22%;
+}
+
+.label{
+  font-size: 100%;
+}
+
+.inline{
+  display: inline-block;
+  width:30%;
+  margin: 0 5% 0 3%;
 }
