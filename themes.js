@@ -4,7 +4,7 @@ var googleUser = {};
     gapi.load('auth2', function(){
       // Retrieve the singleton for the GoogleAuth library and set up the client.
       auth2 = gapi.auth2.init({
-        client_id: '1022490176411-0ohlb4srkhrgnio0aah5c8isht4l4saf.apps.googleusercontent.com',
+        client_id: '1022490176411-olkchcs9lcoqftvvq64cbummgt34bkhq.apps.googleusercontent.com',
         cookiepolicy: 'none',
         // redirect_uri:'http://localhost:5501/emiapp.html'
         // Request scopes in addition to 'profile' and 'email'
