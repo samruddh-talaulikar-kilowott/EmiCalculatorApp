@@ -21,7 +21,7 @@ h2{
 }
 #theme-toggler{
   float:right;
-  margin:3% 5% 0 0;
+  margin-top: 1%;
  color:  #2E4C6D;
  background-color: #F4F6FC;
  
@@ -44,6 +44,7 @@ h2{
   background-color: #F4F6FC;
   border-color: #F4F6FC;
   width:max-content;
+  font-weight: bold;
 }
 
 .btn-primary:hover {
@@ -53,7 +54,7 @@ h2{
 }
 
 .user-themes{
-  padding: 2.5% 0 0 20%;
+  padding: 2.5% 5% 0 5%;
   float: right;
 }
 
@@ -62,12 +63,7 @@ h2{
   border-radius: 22px;
 }
 
-#theme-toggler{
-  float:right;
-  margin:3% 5% 0 5%;
-  background-color: #F4F6FC;
-  color:#2E4C6D;
-}
+
 
 .overlay {
   position: absolute;

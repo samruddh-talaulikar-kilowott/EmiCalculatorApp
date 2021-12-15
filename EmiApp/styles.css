@@ -3,6 +3,7 @@ body {
   height: 100%;
   background-color: #F4F6FC;
   font-family: 'DM Sans', sans-serif;
+  
 }
 
 h2{
@@ -28,6 +29,7 @@ h2{
   background-color: #2E4C6D;
   border-color: #ccc;
   width:max-content;
+  
 }
 
 .btn-primary:hover {
@@ -37,7 +39,7 @@ h2{
 }
 
 .user-themes{
-  padding: 2.5% 0 0 20%;
+  padding: 2.5% 5% 0 5%;
   float: right;
 }
 
@@ -107,7 +109,7 @@ h2{
   margin-top: 10%;
 }
 #images{
-margin-top: 20%;
+margin-top: 7%;
 }
 
 .container .rotate-image1{
@@ -137,13 +139,11 @@ position: absolute;
 
 #customBtn {
   /* display: inline-block; */
-  background:white;;
+  background-color:white;
   color: #2E4C6D;
   width: 280px;
   font-family: 'PT Serif', serif;
- 
-
-  white-space: nowrap;
+ white-space: nowrap;
 }
 #customBtn:hover {
   cursor: pointer;
@@ -173,16 +173,18 @@ span.buttonText {
 
 #theme-toggler{
   float:right;
-  margin:3% 5% 0 5%;
+  margin-top: 1%;
  color:  #F4F6FC;
  background-color:#2E4C6D ;
  
 }
+
 .op{
+  background-color:white;
   display: inline-block;
   vertical-align: middle;
   margin-left: 2%;
- 
+ border:none;
   font-size: 24px;
   font-weight: bold;
   /* Use the Roboto font that is loaded in the <head> */
