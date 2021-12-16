@@ -104,18 +104,7 @@
         </div>
 
 
-        <div class="form-group spacing">
-          <div class="row">
-            <div class="col-sm-4">
-              <button id="button1"  class="btn btn-primary">Daily EMI</button>
-            </div>
-            <div class="col-sm-4">
-              <button  id="button2"  class="btn btn-primary">Monthly EMI</button>
-            </div>
-
-            <button  id="button3" class="btn btn-primary">Continuous EMI</button>
-          </div>
-        </div>
+      
       </form>
     </div>
 
@@ -139,24 +128,49 @@
 
 
 <!-- sailee -->
-<form action="" method="post" onsubmit="return validation()">
+
+<form id="display" action=""class="form-horizontal"  method="post" onsubmit="return validation()">
+  <img src="images/image4.png" alt="coin" class="coin"> 
   <div class="form-group">
-    <label for="principal">Principal</label>
+  
+    <label  class="control-label col-sm-2" for="principal">Principal</label>
+    <div class="col-sm-4">
     <input type="number" class="form-control" id="principalAmount" name="principalAmount" aria-describedby="emailHelp" placeholder="Enter Principal Amount">
+    </div>
    
   </div>
   <div class="form-group">
-    <label for="rate">Interest Rate</label>
+    <label  class="control-label col-sm-2" for="rate">Interest Rate</label>
+    <div class="col-sm-4">
     <input type="number" class="form-control" id="interestRate" name="interestRate"placeholder="Enter Interest Rate">
-  </div>
-  <div class="form-group">
-    <label for="duration">Loan Duration</label>
-    <input type="number" class="form-control" id="loanDuration" name="loanDuration" placeholder="Password">
+    </div>
   </div>
   
-  <button id="button1" type="submit" class="btn btn-primary">Submit</button>
-  <button id="button2" type="submit" class="btn btn-primary">Submit</button>
-  <button id="button3" type="submit" class="btn btn-primary">Submit</button>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="duration">Loan Duration</label>
+    <div class="col-sm-4">
+    <input type="number" class="form-control" id="loanDuration" name="loanDuration" placeholder="Enter Loan Duration">
+  </div>
+  </div>
+  
+
+  <div class="form-group spacing">
+    <div class="row">
+      <div class="col-sm-4">
+       <button id="button1" type="submit" class="btn btn-primary">Daily Emi</button>
+      </div>
+      <div class="col-sm-4">
+        <button id="button2" type="submit" class="btn btn-primary">Monthly Emi</button>
+      </div>
+      <div class="col-sm-4">
+     <button id="button3" type="submit" class="btn btn-primary">Continuous Emi</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <button id="button1" type="submit" class="btn btn-primary">Daily Emi</button>
+  <button id="button2" type="submit" class="btn btn-primary">Monthly Emi</button>
+  <button id="button3" type="submit" class="btn btn-primary">Continuous Emi</button> -->
 
   <div class="form-group">
     <label class="control-label labels" for="output">EMI:</label>

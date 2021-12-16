@@ -19,7 +19,7 @@ h2{
 }
 
 
-.form-section{
+#display{
   margin-top: 5%;
   margin-left: 15%; 
 }
@@ -40,7 +40,7 @@ h2{
 
 .btn-primary:hover {
   color: #F4F6FC;
-  background-color: #79abe0;
+  background-color:#79ABE0;
   border-color: #ccc;
 }
 
