@@ -14,7 +14,7 @@ $(document).ready(function() {
             data: JSON.stringify(formData),
             dataType: "json",
             contentType: "application/json; charset=utf-8",
-            encode: true,
+            // encode: false,
             //  success: function(response) {
             //      var myjson = JSON.stringify(response,null,4);
             //      var x = window.open();
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
       
 
-          event.preventDefault();
+        //   event.preventDefault();
 
 
         
