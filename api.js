@@ -8,7 +8,7 @@
        
         $.ajax({
             type: "POST",
-            url: "https://emicalc-api.herokuapp.com/home/monthlyemi",
+            url: "http://localhost:8080/home/monthlyemi",
             // contentType: "application/json; charset=utf-8",
             data : JSON.stringify(formData),
             // data: formData,
