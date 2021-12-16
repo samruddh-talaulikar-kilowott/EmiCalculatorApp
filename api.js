@@ -10,7 +10,7 @@
             type: "POST",
             url: "https://emicalc-api.herokuapp.com/home/monthlyemi",
             contentType: "application/json; charset=utf-8",
-            // data: JSON.stringify(formData),
+            data: formData,
             dataType: "json",
           
         });
