@@ -37,7 +37,7 @@
       <div class="col-lg-8">
         
         <h2 class="title">Hello </h2>
-        <div id="name">hii</div>
+        <div id="name"></div>
         <h2 class="title">Welcome to our all in one platform.</h2>
 
       </div>
@@ -53,10 +53,10 @@
       </span>
     </div>
 
-  <!-- changes -->
-  <h2>Enter the details for Monthly Compound Interest :</h2>
+  <!-- satya changes -->
+  <!-- <h2>Enter the details for Monthly Compound Interest :</h2>
         <div class="container1">
-            <form action="https://emicalc-api.herokuapp.com/home/monthlyemi" method="POST" id="form1">
+            <form action="" method="POST" id="form1">
               <label for="principal" >Principal</label>
               <input type="number" id="principalAmount" class="form-control" name="principalAmount" placeholder="Enter principal amount...">
               <label >Interest Rate(in percentage)</label>
@@ -64,40 +64,41 @@
               <label >Duration of Loan(in years)</label>
               <input type="number" id="loanDuration" class="form-control" name="loanDuration" placeholder="Enter the loan duration....">
               <button id="button1">send</button>
+              <button id="button2">send2</button>
+              <button id="button3">send3</button>
             </form>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="api.js"></script>
-        <script src="validate-form.js"></script>
-
+        
+       
 
     
     
     
-        <!-- <div class="form-section">
+         scrully <div class="form-section">
 
-      <form class="form-horizontal" action="https://emicalc-api.herokuapp.com/home/monthlyemi" method="post" onsubmit="return validation()"> 
-        <img src="images/image4.png" alt="coin" class="coin">
+      <form class="form-horizontal" action="" method="post" onsubmit="return validation()"> 
+        <img src="images/image4.png" alt="coin" class="coin"> 
         <div>
           <div class="form-group">
             <label class="control-label col-sm-2" for="principal">Principal Amount:</label>
             <div class="col-sm-4">
               <input type="number" class="form-control" id="principalAmount" name="principalAmount" placeholder="Enter Amount">
-              <span id="amount" class="text-danger"></span>
+               <span id="amount" class="text-danger"></span> 
             </div>
           </div>
           <div class="form-group">
             <label class="control-label col-sm-2" for="rate">Interest Rate:</label>
             <div class="col-sm-4">
               <input type="number" class="form-control" id="interestRate" name="interestRate" placeholder="Enter ROI">
-              <span id="roi" class="text-danger"></span>
+              <span id="roi" class="text-danger"></span> 
             </div>
           </div>
           <div class="form-group">
             <label class="control-label col-sm-2" for="duration">Loan Duration:</label>
             <div class="col-sm-4">
               <input type="number" class="form-control" id="loanDuration" name="loanDuration" placeholder="Enter Loan Duration">
-              <span id="time" class="text-danger"></span>
+               <span id="time" class="text-danger"></span> 
             </div>
           </div>
         </div>
@@ -106,13 +107,13 @@
         <div class="form-group spacing">
           <div class="row">
             <div class="col-sm-4">
-              <button id="button1" type="submit" class="btn btn-primary">Daily EMI</button>
+              <button id="button1"  class="btn btn-primary">Daily EMI</button>
             </div>
             <div class="col-sm-4">
-              <button  id="button2" type="submit" class="btn btn-primary">Monthly EMI</button>
+              <button  id="button2"  class="btn btn-primary">Monthly EMI</button>
             </div>
 
-            <button  id="button3" type="submit" class="btn btn-primary">Continuous EMI</button>
+            <button  id="button3" class="btn btn-primary">Continuous EMI</button>
           </div>
         </div>
       </form>
@@ -129,7 +130,49 @@
     </div>
 
   </div> -->
+
+
+
+
+
+
+
+
+<!-- sailee -->
+<form action="" method="post" onsubmit="return validation()">
+  <div class="form-group">
+    <label for="principal">Principal</label>
+    <input type="number" class="form-control" id="principalAmount" name="principalAmount" aria-describedby="emailHelp" placeholder="Enter Principal Amount">
+   
+  </div>
+  <div class="form-group">
+    <label for="rate">Interest Rate</label>
+    <input type="number" class="form-control" id="interestRate" name="interestRate"placeholder="Enter Interest Rate">
+  </div>
+  <div class="form-group">
+    <label for="duration">Loan Duration</label>
+    <input type="number" class="form-control" id="loanDuration" name="loanDuration" placeholder="Password">
+  </div>
+  
+  <button id="button1" type="submit" class="btn btn-primary">Submit</button>
+  <button id="button2" type="submit" class="btn btn-primary">Submit</button>
+  <button id="button3" type="submit" class="btn btn-primary">Submit</button>
+
+  <div class="form-group">
+    <label class="control-label labels" for="output">EMI:</label>
+
+    <input type="text" class="form-control inline" id="output" name="output">
+
+    <button type="submit" class="btn btn-primary">Clear</button>
+
+  </div>
+  
+
+</form>
   <script src="themes.js"></script>
+  <script src="api.js"></script>
+  <script src="validate-form.js"></script> 
+
  
 </body>
 
