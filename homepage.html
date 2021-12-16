@@ -25,9 +25,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=PT+Serif&display=swap" rel="stylesheet">
 
-  <script src="api.js"></script>
-  <script src="validate-form.js"></script>
-
+  <!-- <script src="api.js"></script> -->
+  
 </head>
 
 <body>
@@ -54,7 +53,28 @@
       </span>
     </div>
 
-    <div class="form-section">
+  <!-- changes -->
+  <h2>Enter the details for Monthly Compound Interest :</h2>
+        <div class="container1">
+            <form action="https://emicalc-api.herokuapp.com/home/monthlyemi" method="POST" id="form1">
+              <label for="principal" >Principal</label>
+              <input type="number" id="principalAmount" class="form-control" name="principalAmount" placeholder="Enter principal amount...">
+              <label >Interest Rate(in percentage)</label>
+              <input type="number" id="interestRate" class="form-control" name="interestRate" placeholder="Enter the rate of Interest...">
+              <label >Duration of Loan(in years)</label>
+              <input type="number" id="loanDuration" class="form-control" name="loanDuration" placeholder="Enter the loan duration....">
+              <button id="button1">send</button>
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="api.js"></script>
+        <script src="validate-form.js"></script>
+
+
+    
+    
+    
+        <!-- <div class="form-section">
 
       <form class="form-horizontal" action="https://emicalc-api.herokuapp.com/home/monthlyemi" method="post" onsubmit="return validation()"> 
         <img src="images/image4.png" alt="coin" class="coin">
@@ -86,7 +106,7 @@
         <div class="form-group spacing">
           <div class="row">
             <div class="col-sm-4">
-              <button  id="button1" type="submit" class="btn btn-primary">Daily EMI</button>
+              <button id="button1" type="submit" class="btn btn-primary">Daily EMI</button>
             </div>
             <div class="col-sm-4">
               <button  id="button2" type="submit" class="btn btn-primary">Monthly EMI</button>
@@ -108,7 +128,7 @@
 
     </div>
 
-  </div>
+  </div> -->
   <script src="themes.js"></script>
  
 </body>
