@@ -11,7 +11,7 @@
             url: "https://emicalc-api.herokuapp.com/home/monthlyemi",
             data: JSON.stringify(formData),
             dataType: "json",
-            // contentType: "application/json; charset=utf-8",
+            contentType: false,
             // encode: false,
             //  success: function(response) {
             //      var myjson = JSON.stringify(response,null,4);
