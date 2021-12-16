@@ -53,72 +53,7 @@
       </span>
     </div>
 
-  <!-- satya changes -->
-  <!-- <h2>Enter the details for Monthly Compound Interest :</h2>
-        <div class="container1">
-            <form action="" method="POST" id="form1">
-              <label for="principal" >Principal</label>
-              <input type="number" id="principalAmount" class="form-control" name="principalAmount" placeholder="Enter principal amount...">
-              <label >Interest Rate(in percentage)</label>
-              <input type="number" id="interestRate" class="form-control" name="interestRate" placeholder="Enter the rate of Interest...">
-              <label >Duration of Loan(in years)</label>
-              <input type="number" id="loanDuration" class="form-control" name="loanDuration" placeholder="Enter the loan duration....">
-              <button id="button1">send</button>
-              <button id="button2">send2</button>
-              <button id="button3">send3</button>
-            </form>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
-       
-
-    
-    
-    
-         scrully <div class="form-section">
-
-      <form class="form-horizontal" action="" method="post" onsubmit="return validation()"> 
-        <img src="images/image4.png" alt="coin" class="coin"> 
-        <div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="principal">Principal Amount:</label>
-            <div class="col-sm-4">
-              <input type="number" class="form-control" id="principalAmount" name="principalAmount" placeholder="Enter Amount">
-               <span id="amount" class="text-danger"></span> 
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="rate">Interest Rate:</label>
-            <div class="col-sm-4">
-              <input type="number" class="form-control" id="interestRate" name="interestRate" placeholder="Enter ROI">
-              <span id="roi" class="text-danger"></span> 
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="duration">Loan Duration:</label>
-            <div class="col-sm-4">
-              <input type="number" class="form-control" id="loanDuration" name="loanDuration" placeholder="Enter Loan Duration">
-               <span id="time" class="text-danger"></span> 
-            </div>
-          </div>
-        </div>
-
-
-      
-      </form>
-    </div>
-
-
-    <div class="form-group">
-      <label class="control-label labels" for="output">EMI:</label>
-
-      <input type="text" class="form-control inline" id="output" name="output">
-
-      <button type="submit" class="btn btn-primary">Clear</button>
-
-    </div>
-
-  </div> -->
+  
 
 
 
@@ -127,7 +62,7 @@
 
 
 
-<!-- sailee -->
+
 
 <form id="display" action=""class="form-horizontal"  method="post" onsubmit="return validation()">
   <img src="images/image4.png" alt="coin" class="coin"> 
@@ -168,29 +103,20 @@
     </div>
   </div>
   
-  <!-- <button id="button1" type="submit" class="btn btn-primary">Daily Emi</button>
-  <button id="button2" type="submit" class="btn btn-primary">Monthly Emi</button>
-  <button id="button3" type="submit" class="btn btn-primary">Continuous Emi</button> -->
+  
 
-  <div class="form-group">
-    <label class="control-label labels" for="output">EMI:</label>
+  
+  <label id="result1" class="control-label labels" for="output">EMI : &nbsp;  
+      <span id="ajaxResponse" ></span>
+    </label>
+    
 
-    <input  type="text" class="form-control inline" id="out" name="output">
-    <div id="ajaxResponse"></div>
-
-    <button type="submit" class="btn btn-primary">Clear</button>
-
-  </div>
+ 
   
 
 </form>
 
- <!-- <div>
-   <fieldset>
-     <legend>This is the ajax response</legend>
-     <div id="ajaxResponse"></div>
-   </fieldset>
- </div> -->
+ 
 
   <script src="themes.js"></script>
   <script src="api.js"></script>

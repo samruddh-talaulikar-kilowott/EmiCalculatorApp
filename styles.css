@@ -3,8 +3,8 @@ body {
   height: 100%;
   background-color: #F4F6FC;
   font-family: 'DM Sans', sans-serif;
-  /* overflow-y: hidden; 
-  overflow-x: hidden; */
+  overflow-y: hidden; 
+  overflow-x: hidden;
   
 }
 
@@ -197,4 +197,13 @@ span.buttonText {
   font-weight: bold;
   /* Use the Roboto font that is loaded in the <head> */
   font-family: 'Roboto', sans-serif;
+}
+
+
+
+#result{
+  text-align: center;
+  margin-right: 30%;
+  margin-bottom: 40%;
+  display: block;
 }
