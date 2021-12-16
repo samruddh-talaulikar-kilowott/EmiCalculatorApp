@@ -9,20 +9,10 @@
         $.ajax({
             type: "POST",
             url: "https://emicalc-api.herokuapp.com/home/monthlyemi",
+            contentType: "application/json; charset=utf-8",
             data: JSON.stringify(formData),
             dataType: "json",
-            contentType: false,
-            // encode: false,
-            //  success: function(response) {
-            //      var myjson = JSON.stringify(response,null,4);
-            //      var x = window.open();
-            //      x.document.open();
-            //      x.document.write('<html><body><pre>'+ myjson + '</pre></body><html>');
-            //      x.document.close();
-                 
-            //     console.log(myjson);
-            //  }
-            
+          
         });
 
       
