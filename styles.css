@@ -3,7 +3,8 @@ body {
   height: 100%;
   background-color: #F4F6FC;
   font-family: 'DM Sans', sans-serif;
-  overflow: hidden;
+  overflow-y: hidden; 
+  overflow-x: hidden;
   
 }
 
