@@ -1,4 +1,3 @@
-$(document).ready(function() {
     $("#button2").click(function(event) {
         var formData ={
             principalAmount: $("#principalAmount").val(),
@@ -33,4 +32,3 @@ $(document).ready(function() {
 
         
     });
-});
