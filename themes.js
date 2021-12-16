@@ -18,9 +18,11 @@ var googleUser = {};
     console.log(element.id);
     auth2.attachClickHandler(element, {},
         function(googleUser) {
+
           location.href = 'https://flamboyant-tesla-c14c11.netlify.app/homepage.html'
-          document.getElementById('name').innerText = "Signed in: " +
-              googleUser.getBasicProfile().getName();
+
+          //Changes done 
+          document.getElementById('gname').innerText = googleUser.getBasicProfile().getName();
         }, function(error) {
           alert(JSON.stringify(error, undefined, 2));
 
