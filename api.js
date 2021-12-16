@@ -4,7 +4,7 @@ $(document).ready(function() {
             principalAmount: $("#principalAmount").val(),
             interestRate: $("#interestRate").val(),
             loanDuration: $("#loanDuration").val(),
-        };
+        }
 
        
         $.ajax({
