@@ -1,4 +1,4 @@
-    $("#button1").click(function(event) {
+    $("#button1").click(function() {
         var formData ={
             principalAmount: $("#principalAmount").val(),
             interestRate: $("#interestRate").val(),
