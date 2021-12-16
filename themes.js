@@ -20,7 +20,7 @@ var googleUser = {};
         function(googleUser) {
 
           location.href = 'https://flamboyant-tesla-c14c11.netlify.app/homepage.html'
-          document.getElementById("#name").innerText = "Signed in " +
+          document.getElementById('name').innerText = "Signed in " +
               googleUser.getBasicProfile().getName();
         }, function(error) {
           alert(JSON.stringify(error, undefined, 2));
