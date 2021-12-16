@@ -12,6 +12,12 @@ h2{
   color: #2E4C6D;
 }
 
+#name{
+  font-size: 50px;
+  font-family:'PT Serif', serif;;
+  color: #2E4C6D;
+}
+
 
 .form-section{
   margin-top: 5%;
