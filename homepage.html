@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>EMI CALCULATOR</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-signin-client_id" content="1022490176411-olkchcs9lcoqftvvq64cbummgt34bkhq.apps.googleusercontent.com">
+  <meta name="google-signin-client_id"
+    content="1022490176411-olkchcs9lcoqftvvq64cbummgt34bkhq.apps.googleusercontent.com">
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -13,93 +15,98 @@
   <script src="https://apis.google.com/js/api:client.js"></script>
 
 
-<!-- CSS Stylesheet -->
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
-  <link id="dark-theme-style" rel="stylesheet"/>
+  <link id="dark-theme-style" rel="stylesheet" />
 
   <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=PT+Serif&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
   <img src="images/image3.png" class="rupee" alt="rupee">
-<div class="container-fluid overlay">
-  
-  <div class="header row ">
-    <div class="col-lg-8">
-      
-          <h2 class="title" >Hello </h2>
-          <div id="name">hii</div>
-          <h2 class="title">Welcome to our all in one platform.</h2>
-        
-    </div>
-    <div class="col-lg-4 user-themes">
-      <img alt="avatar" src="images/avatar64.png" class="avatar mr-2">
-      <button class="btn btn-outline-secondary" id="theme-toggler" onclick="toggleTheme()">Switch Theme</button>
-      
-    </div>
-    <span class="user-themes">
-      <!-- //Routing back after clicking on signout -->
-      <a href="https://flamboyant-tesla-c14c11.netlify.app"  onclick="GoogleAuth.signOut();"><button class="btn btn-primary" >Signout</button> </a>
-  </span>
-  </div>
-  
-  <div class="form-section">
-    
-    <form class="form-horizontal" action="">
-      <img src="images/image4.png" alt="coin" class="coin">
-      <div>
-        <div class="form-group">
-        <label class="control-label col-sm-2" for="principal">Principal Amount:</label>
-        <div class="col-sm-4">
-          
-          <input type="text" class="form-control" id="principal" name="principal">
-        </div>
+  <div class="container-fluid overlay">
+
+    <div class="header row ">
+      <div class="col-lg-8">
+
+        <h2 class="title">Hello </h2>
+        <div id="name">hii</div>
+        <h2 class="title">Welcome to our all in one platform.</h2>
+
       </div>
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="rate">Interest Rate:</label>
-        <div class="col-sm-4">          
-          <input type="text" class="form-control" id="rate" name="rate">
-        </div>
+      <div class="col-lg-4 user-themes">
+        <img alt="avatar" src="images/avatar64.png" class="avatar mr-2">
+        <button class="btn btn-outline-secondary" id="theme-toggler" onclick="toggleTheme()">Switch Theme</button>
+
       </div>
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="duration">Loan Duration:</label>
-        <div class="col-sm-4">          
-          <input type="text" class="form-control" id="duration" name="duration">
-        </div>
-      </div>
+      <span class="user-themes">
+        <!-- //Routing back after clicking on signout -->
+        <a href="https://flamboyant-tesla-c14c11.netlify.app" onclick="GoogleAuth.signOut();"><button
+            class="btn btn-primary">Signout</button> </a>
+      </span>
     </div>
-      
-      
-      <div class="form-group spacing">
-        <div class="row">
-          <div class="col-sm-4">
-            <button type="submit" class="btn btn-primary">Daily EMI</button>
+
+    <div class="form-section">
+
+      <form class="form-horizontal" action="" onsubmit="return validation()">
+        <img src="images/image4.png" alt="coin" class="coin">
+        <div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="principal">Principal Amount:</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="principal" name="principal" placeholder="Enter Amount">
+              <span id="amount" class="text-danger"></span>
+            </div>
           </div>
-          <div class="col-sm-4">
-            <button type="submit" class="btn btn-primary">Monthly EMI</button>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="rate">Interest Rate:</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="rate" name="rate" placeholder="Enter ROI">
+              <span id="roi" class="text-danger"></span>
+            </div>
           </div>
-          
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="duration">Loan Duration:</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="duration" name="duration" placeholder="Enter Loan Duration">
+              <span id="time" class="text-danger"></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group spacing">
+          <div class="row">
+            <div class="col-sm-4">
+              <button type="submit" class="btn btn-primary">Daily EMI</button>
+            </div>
+            <div class="col-sm-4">
+              <button type="submit" class="btn btn-primary">Monthly EMI</button>
+            </div>
+
             <button type="submit" class="btn btn-primary">Continuous EMI</button>
           </div>
-        </div>        
-        
-      </div>
-    </form>
-    
-      <div class="form-group">
-        <label class="control-label labels" for="output">EMI:</label>
-                  
-          <input type="text" class="form-control inline" id="output" name="output">
-        
-          <button type="submit" class="btn btn-primary">Clear</button>
-       
+        </div>
+      </form>
     </div>
-    
- </div>
- <script src="themes.js"></script>
-</body>
-</html>
 
+
+    <div class="form-group">
+      <label class="control-label labels" for="output">EMI:</label>
+
+      <input type="text" class="form-control inline" id="output" name="output">
+
+      <button type="submit" class="btn btn-primary">Clear</button>
+
+    </div>
+
+  </div>
+  <script src="themes.js"></script>
+  <script src="validate-form.js"></script>
+</body>
+
+</html>
