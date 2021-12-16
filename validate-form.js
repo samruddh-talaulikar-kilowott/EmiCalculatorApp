@@ -18,9 +18,9 @@
 
 
 function validation() {
-    var principal = document.getElementById('principal').value;
-    var rate = document.getElementById('rate').value;
-    var duration = document.getElementById('duration').value;
+    var principal = document.getElementById('principalAmount').value;
+    var rate = document.getElementById('interestRate').value;
+    var duration = document.getElementById('loanDuration').value;
 
 
     if (principal == "") {
