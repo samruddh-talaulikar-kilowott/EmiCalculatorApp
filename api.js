@@ -1,16 +1,15 @@
 $(document).ready(function() {
-    $("#button1").submit(function(event) {
+    $("#button2").click(function(event) {
         var formData ={
             principalAmount: $("#principalAmount").val(),
             interestRate: $("#interestRate").val(),
             loanDuration: $("#loanDuration").val(),
-        }
+        };
 
        
         $.ajax({
             type: "POST",
             url: "https://emicalc-api.herokuapp.com/home/monthlyemi",
-            
             data: JSON.stringify(formData),
             dataType: "json",
             contentType: "application/json; charset=utf-8",
@@ -25,7 +24,7 @@ $(document).ready(function() {
             //     console.log(myjson);
             //  }
             
-        })
+        });
 
       
 
