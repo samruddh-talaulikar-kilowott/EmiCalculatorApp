@@ -14,9 +14,13 @@ $("#button1").click(function(event) {
         dataType: "json",
         
         success: function(response){
+
+            document.getElementById("ajaxResponse").innerHTML = "";
+            var res = response.DailyEmi;
+            $("#ajaxResponse").append(res);
             
-            document.getElementById("ajaxResponse").innerHTML = JSON.stringify(response) ;
-            console.log(response);
+            // document.getElementById("ajaxResponse").innerHTML = JSON.stringify(response) ;
+            // console.log(response);
            
         }
          
@@ -40,9 +44,10 @@ $("#button2").click(function(event) {
 
 
         success: function(response){
-            
-            document.getElementById("ajaxResponse").innerHTML = JSON.stringify(response) ;
-            console.log(response);
+
+            document.getElementById("ajaxResponse").innerHTML = "";
+            var res = response.MonthlyEmi;
+            $("#ajaxResponse").append(res);
            
         }
         
@@ -70,9 +75,9 @@ $("#button3").click(function(event) {
 
 
         success: function(response){
-            
-            document.getElementById("ajaxResponse").innerHTML = JSON.stringify(response) ;
-            console.log(response);
+             document.getElementById("ajaxResponse").innerHTML = "";
+            var res = response.ContinousEmi;
+            $("#ajaxResponse").append(res);
            
         }
         
