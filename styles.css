@@ -79,6 +79,7 @@ h2{
   left: 72%;
   top: 42%;
   z-index: 1;
+  -webkit-transition: -webkit-transform 1s;
  }
 
 .avatar {
@@ -88,6 +89,7 @@ h2{
   height: 40px;
   margin-left:10%;
   border-radius: 50%;
+ 
 }
 
 .spacing{

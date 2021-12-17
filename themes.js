@@ -83,5 +83,6 @@ function toggleTheme() {
 //rotate an image
 function rotateImg()
 {
-  document.getElementById("coin").style.transform = "rotate(360deg)";
+  document.querySelector(".coin").style.transform = "rotate(360deg)";
 }
+
