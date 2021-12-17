@@ -81,13 +81,13 @@ h2{
 }
 
 .coin{
-  opacity: 0.7;
   width: 7%;
   height:20%;
   position: absolute;
   left: 72%;
   top: 42%;
   z-index: 1;
+  -webkit-transition: -webkit-transform 1s;
  }
 
 .avatar {
