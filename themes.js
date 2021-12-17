@@ -1,41 +1,5 @@
-//Google sign out and sign in
-var googleUser = {};
-  var startApp = function() {
-    gapi.load('auth2', function(){
-      // Retrieve the singleton for the GoogleAuth library and set up the client.
-      auth2 = gapi.auth2.init({
-        client_id: '1022490176411-olkchcs9lcoqftvvq64cbummgt34bkhq.apps.googleusercontent.com',
-        cookiepolicy: 'none',
-        // redirect_uri:'http://localhost:5501/emiapp.html'
-        // Request scopes in addition to 'profile' and 'email'
-        //scope: 'additional_scope'
-      });
-      attachSignin(document.getElementById('customBtn'));
-    });
-  };
+// DARK AND LIGHT TOGGLE
 
-  function attachSignin(element) {
-    console.log(element.id);
-    auth2.attachClickHandler(element, {},
-        function(googleUser) {
-
-          location.href = 'https://flamboyant-tesla-c14c11.netlify.app/homepage.html'
-          document.getElementById("name").innerText = "Signed in " +
-              googleUser.getBasicProfile().getName();
-        }, function(error) {
-          alert(JSON.stringify(error, undefined, 2));
-
-   
-          // window.location.href = 'http://localhost:5501/emiapp.html'
-        });
-  }
-// Function for sign out
-  function signOut(){
-    var auth2=gapi.auth2.getAuthIntance();
-    auth2.signOut().then(function(){
-      console.log('User signed out');
-    });
-  }
 
 // you can use app's unique identifier here
 const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
@@ -80,7 +44,7 @@ function toggleTheme() {
   const META = { isDark };
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
 }
-//rotate an image
+//rotate the coin image on homepage after reload
 function rotateImg()
 {
   document.querySelector(".coin").style.transform = "rotate(360deg)";

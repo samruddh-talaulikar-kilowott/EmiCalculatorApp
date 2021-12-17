@@ -1,7 +1,7 @@
 //just to rotate coin img on every refresh
 rotateImg();
 
-//AJAX call for MontlyEmi API
+//AJAX call for DailyEmi API
 $("#button1").click(function(event) {
     var formData ={
         principalAmount: $("#principalAmount").val(),
@@ -22,14 +22,15 @@ $("#button1").click(function(event) {
             var res = response.DailyEmi;
             $("#ajaxResponse").append(res);
             
-            // document.getElementById("ajaxResponse").innerHTML = JSON.stringify(response) ;
-            // console.log(response);
+            
            
         }
          
     })
      event.preventDefault();
 });   
+
+//AJAX call for MontlyEmi API
 
 $("#button2").click(function(event) {
     var formData ={
@@ -61,7 +62,7 @@ $("#button2").click(function(event) {
 
 
 
-
+//AJAX call for ContinousEmi API
 $("#button3").click(function(event) {
     var formData ={
         principalAmount: $("#principalAmount").val(),

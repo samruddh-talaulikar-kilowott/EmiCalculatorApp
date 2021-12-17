@@ -62,15 +62,16 @@
 
 
 
+<!-- Form for EMI calculation -->
 
-
-<form id="display" action=""class="form-horizontal"  method="post" onsubmit="return validation()">
+<form id="display" action=""class="form-horizontal"  method="post" >
   <img src="images/image4.png" alt="coin" class="coin" id="coin" > 
   <div class="form-group">
   
     <label  class="control-label col-sm-2" for="principal">Principal</label>
     <div class="col-sm-4">
     <input type="number" class="form-control" id="principalAmount" name="principalAmount" aria-describedby="emailHelp" placeholder="Enter Principal Amount">
+    <span id="amount" class="text-danger"></span>
     </div>
    
   </div>
@@ -78,6 +79,7 @@
     <label  class="control-label col-sm-2" for="rate">Interest Rate</label>
     <div class="col-sm-4">
     <input type="number" class="form-control" id="interestRate" name="interestRate"placeholder="Enter Interest Rate">
+    <span id="roi" class="text-danger"></span>
     </div>
   </div>
   
@@ -85,6 +87,7 @@
     <label class="control-label col-sm-2" for="duration">Loan Duration</label>
     <div class="col-sm-4">
     <input type="number" class="form-control" id="loanDuration" name="loanDuration" placeholder="Enter Loan Duration">
+    <span id="time" class="text-danger"></span>
   </div>
   </div>
   
@@ -92,7 +95,7 @@
   <div class="form-group spacing">
     <div class="row">
       <div class="col-sm-4">
-       <button id="button1" type="submit" class="btn btn-primary" >Daily Emi</button>
+       <button id="button1" type="submit" class="btn btn-primary" onclick="return validation()" >Daily Emi</button>
       </div>
       <div class="col-sm-4">
         <button id="button2" type="submit" class="btn btn-primary">Monthly Emi</button>
@@ -117,7 +120,7 @@
 </form>
 
  
-
+  <script src="googleauth.js"></script>
   <script src="themes.js"></script>
   <script src="api.js"></script>
   <script src="validate-form.js"></script> 

@@ -18,35 +18,50 @@
 
 
 function validation() {
-    var p = document.getElementById("principalAmount").value;
-    var r = document.getElementById("interestRate").value;
-    var d = document.getElementById("loanDuration").value;
-
-
-    if (p == "") {
+    var principal = document.getElementById('principalAmount').value;
+    var rate = document.getElementById('interestRate').value;
+    var duration = document.getElementById('loanDuration').value;
+    if ((principal == "")&&(rate == "")&&(duration == "")) {
         document.getElementById('amount').innerHTML = "Please enter principal amount";
-        return false;
-    }
-    if (p == 0) {
-        document.getElementById('amount').innerHTML = "Please enter valid amount";
-        return false;
-    }
-
-    if (r == "") {
         document.getElementById('roi').innerHTML = "Please enter rate of interest";
-        return false;
-    }
-    if ((r<2)||(r>30)) {
-        document.getElementById('roi').innerHTML = "Rate of interest should be greater than 2% or less than 30%";
-        return false;
-    }
-
-
-    if (d == "") {
         document.getElementById('time').innerHTML = "Please enter loan duration";
         return false;
     }
-    if ((d<1)||(d>=10)) {
+    if ((rate == "")&&(duration == "")) {
+        document.getElementById('roi').innerHTML = "Please enter rate of interest";
+        document.getElementById('time').innerHTML = "Please enter loan duration";
+        return false;
+    }
+    if ((principal == "")&&(duration == "")) {
+        document.getElementById('amount').innerHTML = "Please enter principal amount";
+        document.getElementById('time').innerHTML = "Please enter loan duration";
+        return false;
+    }
+    if ((principal == "")&&(rate == "")) {
+        document.getElementById('amount').innerHTML = "Please enter principal amount";
+        document.getElementById('roi').innerHTML = "Please enter rate of interest";
+        return false;
+    }
+    if (principal == "") {
+        document.getElementById('amount').innerHTML = "Please enter principal amount";
+    }
+    if (rate == "") {
+        document.getElementById('roi').innerHTML = "Please enter rate of interest";
+        return false;
+    }
+     if (duration == "") {
+        document.getElementById('time').innerHTML = "Please enter loan duration";
+        return false;
+    }
+    if (principal == 0) {
+        document.getElementById('amount').innerHTML = "Please enter valid amount";
+        return false;
+    }
+    if ((rate<2)||(rate>30)) {
+        document.getElementById('roi').innerHTML = "Rate of interest should be greater than 2% or less than 30%";
+        return false;
+    }
+    if ((duration<1)||(duration>=10)) {
         document.getElementById('time').innerHTML = "loan duration should be greater than 1 year and less than 10 year";
         return false;
     }
