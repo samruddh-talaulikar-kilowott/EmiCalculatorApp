@@ -80,3 +80,8 @@ function toggleTheme() {
   const META = { isDark };
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
 }
+//rotate an image
+function rotateImg()
+{
+  document.getElementById("coin").style.transform = "rotate(360deg)";
+}

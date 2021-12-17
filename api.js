@@ -1,3 +1,6 @@
+//just to rotate coin img on every refresh
+rotateImg();
+
 //AJAX call for MontlyEmi API
 $("#button1").click(function(event) {
     var formData ={

@@ -137,8 +137,12 @@ position: absolute;
   opacity: 0.5; 
  margin-left: 20%;
  margin-bottom: 8%;
+ -webkit-transition: -webkit-transform 1s;
 }
 
+ #image4:hover{
+  -webkit-transform: rotate(360deg) translateZ(0);
+}
 
 #image2{
   margin-left:3%;
