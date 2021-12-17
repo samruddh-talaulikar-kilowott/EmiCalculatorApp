@@ -58,16 +58,16 @@ function validation() {
 
     //if user entered invalid input
 
-    if ((principal == 0) && ((rate < 2) || (rate > 30)) && ((duration < 1) || (duration >= 10))) {
+    if ((principal == 0) && ((rate < 2) || (rate > 30)) && ((duration < 1) || (duration > 15))) {
         document.getElementById('amount').innerHTML = "Please enter valid amount";
         document.getElementById('roi').innerHTML = "Rate of interest should be greater than 2% or less than 30%";
-        document.getElementById('time').innerHTML = "loan duration should be greater than 1 year and less than 10 year";
+        document.getElementById('time').innerHTML = "loan duration should be greater than 1 year and less than 15 year";
         return false;
     }
 
-    if (((rate < 2) || (rate > 30)) && ((duration < 1) || (duration >= 10))) {
+    if (((rate < 2) || (rate > 30)) && ((duration < 1) || (duration > 15))) {
         document.getElementById('roi').innerHTML = "Rate of interest should be greater than 2% or less than 30%";
-        document.getElementById('time').innerHTML = "loan duration should be greater than 1 year and less than 10 year";
+        document.getElementById('time').innerHTML = "loan duration should be greater than 1 year and less than 15 year";
         return false;
     }
 
@@ -78,9 +78,9 @@ function validation() {
     }
 
 
-    if ((principal == 0)&&((duration<1)||(duration>=10))) {
+    if ((principal == 0)&&((duration<1)||(duration>15))) {
         document.getElementById('amount').innerHTML = "Please enter valid amount";
-        document.getElementById('time').innerHTML = "loan duration should be greater than 1 year and less than 10 year";
+        document.getElementById('time').innerHTML = "loan duration should be greater than 1 year and less than 15 year";
         return false;
     }
 
@@ -94,8 +94,8 @@ function validation() {
         document.getElementById('roi').innerHTML = "Rate of interest should be greater than 2% or less than 30%";
         return false;
     }
-    if ((duration < 1) || (duration >= 10)) {
-        document.getElementById('time').innerHTML = "loan duration should be greater than 1 year and less than 10 year";
+    if ((duration < 1) || (duration >15)) {
+        document.getElementById('time').innerHTML = "loan duration should be greater than 1 year and less than 15 year";
         return false;
     }
 }
